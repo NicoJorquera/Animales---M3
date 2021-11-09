@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*width: inherit;*/
+  }
+
+body {
+  background-image: url("../imgs/fondo.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 100px;
+}
+
+/* Formulario */
+
+#preview {
+  height: 200px;
+  background-image: url(../imgs/lion.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Tabla de Participantes */
+
+#Animales {
+  height: 100%;
+  background: #f0f0f0;
+}
+
+#Animales div div {
+  transition: all 200ms;
+}
+
+#Animales div >div:hover {
+  box-shadow: 0px 1px 5px 1px;
+}
+
+.participante {
+  max-width: 30%;
+}
+
+/* Modal */
+
+.modal-dialog{
+    max-width: 85% !important;
+    color: white; /*agregado*/
+    text-align: center; /*agregado*/
+}
+
+.nuevaCard > div > i{ /*De la clase, llamar al primer elemento, seguido del (digamos) primo si lo vemos por herencia*/
+  font-size: 1.5rem;
+  cursor: pointer; /*el icono tenga tamaño, y al colocar encima del aparece otra especie de click*/
+}
+
+.nuevaCard{
+  width: 30%; /*la card va hacer del 30% del card padre donde esta wea ploma*/
+  margin: .2rem;
+}
+
+.nuevaCard .card-body{
+  padding: .7rem;
+}
+
+.card{
+  background-color: dimgray;
+  min-height: 220px; /*este se agrego*/
+}
+
+.imgDefinida{ /*se añadio esta clase completa proveniente del index.js*/
+  height: 220px;
+}
